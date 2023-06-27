@@ -1,9 +1,14 @@
 ﻿#include <iostream>
 #include <cstdlib>
+#include <string>
 
 int main() {
+  std::string path;
+  getline(std::cin, path);
 
-  std::system("C:\\Users\\ivanv\\source\\repos\\chrono_test\\Debug\\chrono_test");
+  for (int i = 0; i < 1000; i++) {
+    std::system(path.c_str());
+  }
 
 	return 0;
 }
